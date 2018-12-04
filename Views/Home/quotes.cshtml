@@ -1,0 +1,11 @@
+<h1>Here are the Quotes!</h1>
+<div>   
+    @{
+        foreach(var quote in @ViewBag.all_quotes)
+        {
+            <p>@quote["name"]</p>
+            <p>@quote["quote"]</p>
+            <p>@quote["created_at"]</p>
+        }
+    }
+</div>

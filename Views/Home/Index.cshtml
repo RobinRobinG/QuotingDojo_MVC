@@ -1,0 +1,22 @@
+﻿@{
+    ViewData["Home"] = "Home Page";
+}
+
+<div class="wrapper">
+    <div class="header">
+        <h1>Quoting Dojo!</h1>
+    </div>
+    <form asp-action="AddQuote" asp-controller="Home" method="POST">
+        <div>
+            <label>Name:</label>
+            <input type="text" name="Name">
+        </div>
+        <div>
+            <label>Quote:</label>
+            <input type="text" name="Quote">
+        </div>
+        <button>Submit</button>
+    </form>
+
+    <a href="/quotes">Skip to Quotes</a>
+</div>
